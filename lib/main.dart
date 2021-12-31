@@ -1,7 +1,7 @@
 abstract class Shape {
   int? x;
   int? y;
-  Shape clone();
+  Shape clone(); //prototype functionality.
 }
 
 class Rectangle implements Shape {
@@ -16,6 +16,7 @@ class Rectangle implements Shape {
 
   Rectangle(this.height, this.width, this.x, this.y);
 
+//clone logic.
   Rectangle.fromSource(Rectangle source) {
     height = source.height;
     width = source.width;
